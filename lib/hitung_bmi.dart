@@ -54,6 +54,13 @@ class _HitungBmiState extends State<HitungBmi> {
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
+                    validator: (value){
+                      if(value.isEmpty){
+                        return "Masukkan berat badan anda";
+                      }else{
+                        return null;
+                      }
+                    },
                   ),
                 ),
                 Padding(
@@ -70,6 +77,13 @@ class _HitungBmiState extends State<HitungBmi> {
                       border: OutlineInputBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                     ),
+                    validator: (value){
+                      if(value.isEmpty){
+                        return "Masukkan tinggi badan anda";
+                      }else{
+                        return null;
+                      }
+                    },
                   ),
                 ),
                 Padding(
